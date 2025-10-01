@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class GagilevAppConfig(AppConfig):
+class DjangoAppConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'gagilev_app'
+    name = 'django_app'
