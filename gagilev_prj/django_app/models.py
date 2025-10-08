@@ -36,7 +36,7 @@ class Position(models.Model):
 class Client(models.Model):
     first_name = models.CharField("Имя", max_length=50)
     last_name = models.CharField("Фамилия", max_length=50)
-    father_name = models.CharField("Отчество", max_length=50, null=True)
+    father_name = models.CharField("Отчество", max_length=50, null=True, blank=True)
     phone_number = models.CharField("Номер телефона", max_length=11, unique=True)
     subscription_id = models.ForeignKey(Subscription, on_delete=models.CASCADE, verbose_name="Абонимент")
 
@@ -56,7 +56,7 @@ class Client(models.Model):
 class Trainer(models.Model):
     first_name = models.CharField("Имя", max_length=50)
     last_name = models.CharField("Фамилия", max_length=50)
-    father_name = models.CharField("Отчество", max_length=50, null=True)
+    father_name = models.CharField("Отчество", max_length=50, null=True, blank=True)
     phone_number = models.CharField("Номер телефона", max_length=11, unique=True)
     position_id = models.ForeignKey(Position, on_delete=models.CASCADE, verbose_name="Должность")
 
