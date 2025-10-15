@@ -4,14 +4,14 @@ class Subscription(models.Model):
     title = models.CharField("Описание", max_length=50)
     price = models.DecimalField("Цена", max_digits=10, decimal_places=2)
     expiry_date = models.DateField("Срок истечения")
+    client_id = models.ForeignKey('Client', on_delete=models.CASCADE, verbose_name="Клиент")
     
     class Meta:
-        verbose_name = "Абонимент"
-        verbose_name_plural = "Абонименты"
-        ordering = ["price"]
+        verbose_name = "Абонемент"
+        verbose_name_plural = "Абонементы"
+        ordering = ["expiry_date"]
         indexes = [
             models.Index(fields=["expiry_date"]),
-            models.Index(fields=["price"]),
             models.Index(fields=["title"])
         ]
         
@@ -38,7 +38,6 @@ class Client(models.Model):
     last_name = models.CharField("Фамилия", max_length=50)
     father_name = models.CharField("Отчество", max_length=50, null=True, blank=True)
     phone_number = models.CharField("Номер телефона", max_length=11, unique=True)
-    subscription_id = models.ForeignKey(Subscription, on_delete=models.CASCADE, verbose_name="Абонимент")
 
     class Meta:
         verbose_name = "Клиент"
@@ -76,8 +75,8 @@ class Trainer(models.Model):
 class Training(models.Model):
     start_time = models.DateTimeField("Начало")
     end_time = models.DateTimeField("Конец")
-    trainer_id = models.ForeignKey(Trainer, on_delete=models.CASCADE, verbose_name="Тренер")
-    client_id = models.ForeignKey(Client, on_delete=models.CASCADE, verbose_name="Клиент")
+    trainer_id = models.ManyToManyField(Trainer, verbose_name="Тренер")
+    client_id = models.ManyToManyField(Client, verbose_name="Клиент")
 
     class Meta:
         verbose_name = "Тренировка"
