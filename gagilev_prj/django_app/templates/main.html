@@ -1,0 +1,21 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block tab_header %}{% endblock tab_header %}</title>
+</head>
+.div { min-width: 100%; min-height: 100%; position: relative; }
+<body>
+    <header>
+        <div class='.div' style='background-colour: red;'>Шапка</div>
+    </header>
+    <main>
+        {% block main %}
+        {% endblock %}
+    </main>
+    <footer>Bye world</footer>
+</body>
+</html>
