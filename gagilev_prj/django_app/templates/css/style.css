@@ -1,0 +1,20 @@
+.div1 {
+    background-color: rgb(151, 134, 76);
+    height: 50px;
+    padding-top: 20px;  
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    font-family: 'Trebuchet MS';
+    display: inline;
+    margin-right: 50px;
+}
+
+.a_shap {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+
