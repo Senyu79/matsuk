@@ -1,9 +1,209 @@
-{% extends "main.html" %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block tab_header %}Каталог{% endblock tab_header %}
-{% block main %}
-<h1>Каталог</h1>
-<div>
-    ...
-</div>
-{% endblock main %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>иба чотка</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <h1 class="title">KURTOFF</h1>
+                <nav class="nav-header">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#" class="nav-link">Тарифы</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Расписание</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Персонал</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="trafic-main">
+                <h2 class="title-trafic">НАШИ ТАРИФЫ</h2>
+                <div class="trafic-list">
+                    <div class="trafic-light">
+                        <div class="trafic-head">
+                            <h2 class="title-item">LIGHT</h2>
+                            <div class="kvadrat-1"><img src="images/Group 2.svg" alt="" class="atom"></div>
+                        </div>
+                        <div class="information">
+                            <ul class="information-list">
+                                <li class="information-item">
+                                    <img src="images/checkmark.png" alt="" class="information-img">
+                                    <p class="information-text">безлимитный доступ в клуб</p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/checkmark.png" alt="" class="information-img">
+                                    <p class="information-text">тренажерный зал</p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/checkmark.png" alt="" class="information-img">
+                                    <p class="information-text">анализ состава тела InBody</p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/checkmark.png" alt="" class="information-img">
+                                    <p class="information-text">профилактика здоровья</p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/checkmark.png" alt="" class="information-img">
+                                    <p class="information-text">мобильное приложение</p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/cross.png" alt="" class="information-img">
+                                    <p class="information-text">групповые занятия </p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/cross.png" alt="" class="information-img">
+                                    <p class="information-text">SPA-зона</p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/cross.png" alt="" class="information-img">
+                                    <p class="information-text">доступ во все клубы сети</p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/cross.png" alt="" class="information-img">
+                                    <p class="information-text">доступ для друзей</p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/cross.png" alt="" class="information-img">
+                                    <p class="information-text">семейный доступ</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="price-info">1 700₽ В месяц</h3>
+                        <a href="#" class="trafic-btn-light">Купить</a>
+                    </div>
+                    <div class="trafic-infinitty">
+                        <div class="trafic-head">
+                            <h2 class="title-item">INFINITY</h2>
+                            <div class="kvadrat-2"><img src="images/Group 2.svg" alt="" class="atom"></div>
+                        </div>
+                        <div class="information">
+                            <ul class="information-list">
+                                <li class="information-item">
+                                    <img src="images/checkmark.png" alt="" class="information-img">
+                                    <p class="information-text">безлимитный доступ в клуб</p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/checkmark.png" alt="" class="information-img">
+                                    <p class="information-text">тренажерный зал</p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/checkmark.png" alt="" class="information-img">
+                                    <p class="information-text">анализ состава тела InBody</p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/checkmark.png" alt="" class="information-img">
+                                    <p class="information-text">профилактика здоровья</p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/checkmark.png" alt="" class="information-img">
+                                    <p class="information-text">мобильное приложение</p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/checkmark.png" alt="" class="information-img">
+                                    <p class="information-text">групповые занятия </p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/checkmark.png" alt="" class="information-img">
+                                    <p class="information-text">SPA-зона</p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/checkmark.png" alt="" class="information-img">
+                                    <p class="information-text">доступ во все клубы сети</p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/checkmark.png" alt="" class="information-img">
+                                    <p class="information-text">доступ для друзей</p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/checkmark.png" alt="" class="information-img">
+                                    <p class="information-text">семейный доступ</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="inff">
+                            <h3 class="price-info">3 200₽ В месяц</h3>
+                            <a href="#" class="trafic-btn-inf">Купить</a>
+                        </div>
+                    </div>
+                    <div class="trafic-smart">
+                        <div class="trafic-head">
+                            <h2 class="title-item">SMART</h2>
+                            <div class="kvadrat-3"><img src="images/Group 2.svg" alt="" class="atom"></div>
+                        </div>
+                        <div class="information">
+                            <ul class="information-list">
+                                <li class="information-item">
+                                    <img src="images/checkmark.png" alt="" class="information-img">
+                                    <p class="information-text">безлимитный доступ в клуб</p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/checkmark.png" alt="" class="information-img">
+                                    <p class="information-text">тренажерный зал</p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/checkmark.png" alt="" class="information-img">
+                                    <p class="information-text">анализ состава тела InBody</p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/checkmark.png" alt="" class="information-img">
+                                    <p class="information-text">профилактика здоровья</p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/checkmark.png" alt="" class="information-img">
+                                    <p class="information-text">мобильное приложение</p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/checkmark.png" alt="" class="information-img">
+                                    <p class="information-text">групповые занятия </p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/cross.png" alt="" class="information-img">
+                                    <p class="information-text">SPA-зона</p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/cross.png" alt="" class="information-img">
+                                    <p class="information-text">доступ во все клубы сети</p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/cross.png" alt="" class="information-img">
+                                    <p class="information-text">доступ для друзей</p>
+                                </li>
+                                <li class="information-item">
+                                    <img src="images/cross.png" alt="" class="information-img">
+                                    <p class="information-text">семейный доступ</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="price-info">2 400₽  В месяц</h3>
+                        <a href="#" class="trafic-btn-smart">Купить</a>
+                    </div>
+                </div>
+                <h2 class="free">Первая тренировка бесплатно!</h2>
+                <button type="submit" class="free-btn">Записаться</button>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
