@@ -130,6 +130,7 @@ body{
     height: 700px;
     color: #0CA1B1;
     border-radius: 30px;
+    padding-bottom: 15px;
 }
 
 .trafic-infinitty{
@@ -138,6 +139,7 @@ body{
     height: 730px;
     color: #202439;
     border-radius: 30px;
+    padding-bottom: 15px;
 }
 
 .trafic-smart{
@@ -146,6 +148,7 @@ body{
     height: 700px;
     color: #ED692A;
     border-radius: 30px;
+    padding-bottom: 15px;
 }
 
 .title-item{
@@ -155,11 +158,11 @@ body{
 .trafic-btn-smart{
     padding: 15px 80px;
     position: relative;
-
     left: 100px;
     background-color: #ED692A;
     border-radius: 50px;
     color: #F3F4F7;
+    border: none;
 }
 
 .trafic-btn-light{
@@ -169,6 +172,7 @@ body{
     background-color: #0CA1B1;
     border-radius: 50px;
     color: #F3F4F7;
+    border: none;
 }
 
 .trafic-btn-inf{
@@ -177,6 +181,22 @@ body{
     border-radius: 50px;
     color: #F3F4F7;
     margin-left: 100px;
+    border: none;
+}
+
+.trafic-btn-light:hover{
+    transform: scale(1.05);
+    background: #70b5bd;
+}
+
+.trafic-btn-inf:hover{
+    transform: scale(1.05);
+    background: #3d4466;
+}
+
+.trafic-btn-smart:hover{
+    transform: scale(1.05);
+    background: #ff854d;
 }
 
 .trafic-main{
@@ -272,7 +292,7 @@ body{
 
 .free-btn:hover{
     transform: scale(1.05);
-    background: #b3bbe7;
+    background: rgb(199, 205, 238);
 }
 
 footer{

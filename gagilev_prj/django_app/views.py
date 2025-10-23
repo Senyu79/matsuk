@@ -1,6 +1,8 @@
 from django.shortcuts import render, HttpResponse
 from .models import *
 
-def index(request):
+def pag1(request):
+    return render(request, 'page1.html')
 
-    return render(request, 'main.html')
+def pag1(request):
+    return render(request, 'page1.html')
