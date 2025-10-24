@@ -1,11 +1,8 @@
 from django.urls import path
 from django.contrib.sitemaps.views import sitemap
-from .views import index, pag1
+from .views import page1, page2
 
 urlpatterns = [
-    path('', pag1),
-]
-
-urlpatterns = [
-    path('', index),
+    path('', page1),
+    path('Subscription', page2)
 ]
