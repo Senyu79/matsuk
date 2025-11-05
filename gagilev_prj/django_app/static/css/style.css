@@ -298,3 +298,107 @@ body{
 footer{
     margin-top: 70px;
 }
+
+.title-personal{
+    text-align: center;
+    margin: 40px 0 50px 0;
+    font-size: 45px;
+}
+
+.person-item{
+    text-align: center;
+}
+
+.pres-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-rows: repeat(auto-fill, 350px);
+}
+.personal{
+    margin-bottom: 70px;
+}
+
+.contacts{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.phon{
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+.text-contctss{
+    margin-bottom: 30px;
+}
+
+.button-contact{
+    color: #fff;
+    background-color: #ED692A;
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+
+
+.date{
+    width: 70%;
+}
+
+.scheduleee{
+    display: flex;
+}
+
+.title-date{
+    text-align: start;
+    margin-left: 180px;
+}
+
+.title-schedule{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.date-list{
+    display: flex;
+    background-color: #D9D9D9;
+    gap: 15px;
+    width: 480px;
+    padding: 5px 20px;
+    border-radius: 15px;
+}
+
+.date-item{
+    background-color: #E8EAED;
+    border-radius: 15px;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+.time-block{
+    width: 400px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.title-time-h{
+    font-size: 25px;
+}
+
+
+.news{
+    margin-top: 70px;
+    font-size: 25px;
+}
+
+.news-item{
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.about-img {
+    width: 40px;
+    padding-left: 5px;
+}

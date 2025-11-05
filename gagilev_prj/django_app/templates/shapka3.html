@@ -1,6 +1,9 @@
-{% load static %}
+{%import url%}
 <!DOCTYPE html>
 <html lang="en">
+
+<img src=" {% static '../static/images/zal-4.jpg' %} " alt="#" class="zal-img">
+<img src={% static 'images/Lotus.svg' %} alt="#" class="about-img">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href=" {% static '../static/css/normalize.css' %} ">
     <link rel="stylesheet" href=" {% static '../static/css/style.css' %} ">
-    <title>иба чотка</title>
+    <title>Kurt-Conors</title>
 </head>
 
 <body>
@@ -23,7 +26,7 @@
                     <ul class="nav-list">
                         <li class="nav-item"><a href={% url 'subscription' %} class="nav-link">Тарифы</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Расписание</a></li>
-                        <li class="nav-item"><a href={% url 'staff' %} class="nav-link">Персонал</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Персонал</a></li>
                     </ul>
                 </nav>
             </div>
@@ -36,7 +39,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-inner">
-                
+
             </div>
         </div>
     </footer>
