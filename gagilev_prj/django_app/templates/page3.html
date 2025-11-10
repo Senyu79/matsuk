@@ -1,49 +1,46 @@
-{% extends "main.html" %}
-{% load static %}
+{% extends "main.html" %} {% load static %} {% block main %}
 
-{% block main %}        
-        
-        <div class="container">
-            <section class="personal">
-                <h1 class="title-personal">Персонал</h1>
-                <div class="pres-list">
-                    <div class="person-item">
-                        <img src={% static 'images/Олег Шпаков.png' %} alt="" class="preson-img">
-                        <h3 class="name-person">Олег Шпаков</h3>
-                    </div>
-                    <div class="person-item">
-                        <img src={% static 'images/Дмитрий Ушаков.png' %} alt="" class="preson-img">
-                        <h3 class="name-person">Дмитрий Ушаков</h3>
-                    </div>
-                    <div class="person-item">
-                        <img src={% static 'images/Саргей Черных.png' %} alt="" class="preson-img">
-                        <h3 class="name-person">Саргей Черных</h3>
-                    </div>
-                    <div class="person-item">
-                        <img src={% static 'images/Гарик Веселый.png' %} alt="" class="preson-img">
-                        <h3 class="name-person">Гарик Веселый</h3>
-                    </div>
-                    <div class="person-item">
-                        <img src={% static 'images/Ахмед Ахмедов.png' %} alt="" class="preson-img">
-                        <h3 class="name-person">Ахмед Ахмедов</h3>
-                    </div>
-                    <div class="person-item">
-                        <img src={% static 'images/Ольга Смирных.png' %} alt="" class="preson-img">
-                        <h3 class="name-person">Ольга Смирных</h3>
-                    </div>
-                    <div class="person-item">
-                        <img src={% static 'images/Георгий Стародуб.png' %} alt="" class="preson-img">
-                        <h3 class="name-person">Георгий Стародуб</h3>
-                    </div>
-                </div>
-            </section>
-            <section class="contacts">
-                <h2 class="conatct">Контакты</h2>
-                <p class="adress">г. Сургут, Нефтеюганское шоссе <br>д.2, ТРК "Союз", 3 этаж</p>
-                <a href="" class="phon">+7 (495) 032-99-70</a>
-                <p class="text-contct">Ежедневно с 6 до 24</p>
-                <p class="text-contctss">Работа ресепшен с 10 до 22</p>
-                <a href="#" class="button-contact">Присоединиться</a>
-            </section>
-        </div>
+<div class="container">
+  <section class="personal">
+    <h1 class="title-personal">Персонал</h1>
+    <div class="pres-list">
+      <div class="person-item">
+        <img src={% static 'images/Олег Шпаков.png' %} alt="" class="preson-img">
+        <h3 class="name-person">Олег Шпаков</h3>
+      </div>
+      <div class="person-item">
+        <img src={% static 'images/Дмитрий Ушаков.png' %} alt="" class="preson-img">
+        <h3 class="name-person">Дмитрий Ушаков</h3>
+      </div>
+      <div class="person-item">
+        <img src={% static 'images/Саргей Черных.png' %} alt="" class="preson-img">
+        <h3 class="name-person">Сергей Черных</h3>
+      </div>
+      <div class="person-item">
+        <img src={% static 'images/Гарик Веселый.png' %} alt="" class="preson-img">
+        <h3 class="name-person">Гарик Веселый</h3>
+      </div>
+      <div class="person-item">
+        <img src={% static 'images/Ахмед Ахмедов.png' %} alt="" class="preson-img">
+        <h3 class="name-person">Ахмед Ахмедов</h3>
+      </div>
+      <div class="person-item">
+        <img src={% static 'images/Ольга Смирных.png' %} alt="" class="preson-img">
+        <h3 class="name-person">Ольга Смирных</h3>
+      </div>
+      <div class="person-item">
+        <img src={% static 'images/Георгий Стародуб.png' %} alt="" class="preson-img">
+        <h3 class="name-person">Георгий Стародуб</h3>
+      </div>
+    </div>
+  </section>
+  <section class="contacts">
+    <h2 class="conatct">Контакты</h2>
+    <p class="adress">г. Сургут, Нефтеюганское шоссе <br />д.2, ТРК "Союз", 3 этаж</p>
+    <a href="" class="phon">+7 (495) 032-99-70</a>
+    <p class="text-contct">Ежедневно с 6 до 24</p>
+    <p class="text-contctss">Работа ресепшен с 10 до 22</p>
+    <a href="#" class="button-contact">Присоединиться</a>
+  </section>
+</div>
 {% endblock %}
