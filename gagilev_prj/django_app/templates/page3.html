@@ -4,34 +4,16 @@
   <section class="personal">
     <h1 class="title-personal">Персонал</h1>
     <div class="pres-list">
+      {% for Trainer in trainerrr %}
       <div class="person-item">
-        <img src={% static 'images/Олег Шпаков.png' %} alt="" class="preson-img">
-        <h3 class="name-person">Олег Шпаков</h3>
+        {% if Trainer.cover_url %}
+        <img src="{{ Trainer.cover_url }}" alt="{{ Trainer.first_name }}" class="preson-img">
+        {% endif %}
+        {% if Trainer.first_name %}
+        <h3 class="name-person">{{ Trainer.first_name }} {{ Trainer.last_name }}</h3>
+        {% endif %}
       </div>
-      <div class="person-item">
-        <img src={% static 'images/Дмитрий Ушаков.png' %} alt="" class="preson-img">
-        <h3 class="name-person">Дмитрий Ушаков</h3>
-      </div>
-      <div class="person-item">
-        <img src={% static 'images/Саргей Черных.png' %} alt="" class="preson-img">
-        <h3 class="name-person">Сергей Черных</h3>
-      </div>
-      <div class="person-item">
-        <img src={% static 'images/Гарик Веселый.png' %} alt="" class="preson-img">
-        <h3 class="name-person">Гарик Веселый</h3>
-      </div>
-      <div class="person-item">
-        <img src={% static 'images/Ахмед Ахмедов.png' %} alt="" class="preson-img">
-        <h3 class="name-person">Ахмед Ахмедов</h3>
-      </div>
-      <div class="person-item">
-        <img src={% static 'images/Ольга Смирных.png' %} alt="" class="preson-img">
-        <h3 class="name-person">Ольга Смирных</h3>
-      </div>
-      <div class="person-item">
-        <img src={% static 'images/Георгий Стародуб.png' %} alt="" class="preson-img">
-        <h3 class="name-person">Георгий Стародуб</h3>
-      </div>
+      {% endfor %}
     </div>
   </section>
   <section class="contacts">

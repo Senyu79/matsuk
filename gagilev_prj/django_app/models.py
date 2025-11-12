@@ -58,6 +58,7 @@ class Trainer(models.Model):
     father_name = models.CharField("Отчество", max_length=50, null=True, blank=True)
     phone_number = models.CharField("Номер телефона", max_length=11, unique=True)
     position_id = models.ForeignKey(Position, on_delete=models.CASCADE, verbose_name="Должность")
+    cover_url = models.URLField("Фото", blank=True, null=True)
 
     class Meta:
         verbose_name = "Тренер"
