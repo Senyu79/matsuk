@@ -1,404 +1,505 @@
 .instrument-sans-uniquifier {
   font-family: "Instrument Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: weight;
+  font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-
-li{
-    list-style: none;
-}
-
-ul{
-    padding: 0;
-}
-
-a{
-    text-decoration: none;
-
-}
-
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.container{
-    margin: 0 auto;
-    padding: 0 10px;
-    width: 1500px;
-}
-
-.header{
-    background-color: #B7C0F9;
-
-}
-
-.header-inner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.title{
-    font-size: 35px;
-}
-
-.nav-list{
-    display: flex;
-    gap: 45px;
-    font-size: 25px;
-}
-
-.nav-item:hover {
-  transform: translateY(-2px);
-}
-
-.nav-link{
-    text-decoration: none;
-    color: #000;
-}
-
-.nav-item{
-    list-style: none;
-}
-
-.img{
-    display: flex;
-    padding-top: 60px;
-}
-
-.zal{
-    width: 50%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 370px);
-    grid-template-rows: repeat(auto-fill, 370px);
-}
-
-.about-list{
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 240px;
-    text-align: center;
-    align-items: center;
-}
-
-.s{
-    width: 400px;
-}
-
-.about-item{
-    margin-bottom: 80px;
-}
-
-.about-text{
-    font-size: 20px;
-}
-
-.title-about-us{
-    font-size: 25px; 
-}
-
-.text-about-us{
-    font-size: 25px;
-}
-
-.footer{
-    background-color: #B7C0F9;
-    height: 150px;
-}
-
-.title-trafic{
-    font-size: 45px;
-}
-
-.title-trafic{
-    text-align: center;
-    margin: 50px 0;
-}
-
-.trafic-list{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.trafic-light{
-    background-color: #F3F4F7;
-    width: 400px;
-    height: 700px;
-    color: #0CA1B1;
-    border-radius: 30px;
-    padding-bottom: 15px;
-}
-
-.trafic-infinitty{
-    background-color: #F3F4F7;
-    width: 400px;
-    height: 730px;
-    color: #202439;
-    border-radius: 30px;
-    padding-bottom: 15px;
-}
-
-.trafic-smart{
-    background-color: #F3F4F7;
-    width: 400px;
-    height: 700px;
-    color: #ED692A;
-    border-radius: 30px;
-    padding-bottom: 15px;
-}
-
-.title-item{
-    margin: 30px;
-}
-
-.trafic-btn-smart{
-    padding: 15px 80px;
-    position: relative;
-    left: 100px;
-    background-color: #ED692A;
-    border-radius: 50px;
-    color: #F3F4F7;
-    border: none;
-}
-
-.trafic-btn-light{
-    padding: 15px 80px;
-    position: relative;
-    left: 100px;
-    background-color: #0CA1B1;
-    border-radius: 50px;
-    color: #F3F4F7;
-    border: none;
-}
-
-.trafic-btn-inf{
-    padding: 15px 80px;
-    background-color: #202439;
-    border-radius: 50px;
-    color: #F3F4F7;
-    margin-left: 100px;
-    border: none;
-}
-
-.trafic-btn-light:hover{
-    transform: scale(1.05);
-    background: #70b5bd;
-}
-
-.trafic-btn-inf:hover{
-    transform: scale(1.05);
-    background: #3d4466;
-}
-
-.trafic-btn-smart:hover{
-    transform: scale(1.05);
-    background: #ff854d;
-}
-
-.trafic-main{
-    margin-bottom: 40px;
-}
-
-.information-item{
-    display: flex;
-    font-size: 15px;
-    align-items: center;
-}
-
-.information-text{
-    margin-left: 5px;
-    color: #000;
-}
-
-.information-img{
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
-}
-
-.information{
-    margin-bottom: 20px;
-}
-
-.price-info{
-    text-align: center;
-}
-
-.inff{
-    margin-top: 50px;
-}
-
-.trafic-head{
-    display: flex;
-}
-
-.kvadrat-1{
-    background-color: #D6F1F0;
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
-    margin-left: 130px;
-    position: relative;
-    bottom: 30px;
-    align-items: center;
-}
-
-.atom{
-    height: 100px;
-    width: 100px;
-}
-
-.kvadrat-2{
-    background-color: #DDE1EF;
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
-    margin-left: 130px;
-    position: relative;
-    bottom: 30px;
-}
-
-.kvadrat-3{
-    background-color: #FFEBD6;
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
-    margin-left: 130px;
-    position: relative;
-    bottom: 30px;
-}
-
-
-.free{
-    margin-top: 50px;
-    text-align: center;
-    font-size: 35px;
-    margin-bottom: 50px;
-}
-
-.free-btn{
-    font-size: 25px;
-    margin-left:640px;
-    background-color: #B7C0F9;
-    border: none;
-    padding: 15px 60px;
-    border-radius: 40px;
-    color: #fff;
-}
-
-.free-btn:hover{
-    transform: scale(1.05);
-    background: rgb(199, 205, 238);
-}
-
-footer{
-    margin-top: 70px;
-}
-
-.title-personal{
-    text-align: center;
-    margin: 40px 0 50px 0;
-    font-size: 45px;
-}
-
-.person-item{
-    text-align: center;
-}
-
-.pres-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
-    grid-template-rows: repeat(auto-fill, 350px);
-}
-.personal{
-    margin-bottom: 70px;
-}
-
-.contacts{
-    font-size: 25px;
-    font-weight: 600;
-}
-
-.phon{
-    color: #000;
-    border-bottom: 2px solid #000;
-}
-
-.text-contctss{
-    margin-bottom: 30px;
-}
-
-.button-contact{
-    color: #fff;
-    background-color: #ED692A;
-    border-radius: 30px;
-    padding: 10px 30px;
-}
-
-
-.date{
-    width: 70%;
-}
-
-.scheduleee{
-    display: flex;
-}
-
-.title-date{
-    text-align: start;
-    margin-left: 180px;
-}
-
-.title-schedule{
-    margin-top: 50px;
-    text-align: center;
-}
-
-.date-list{
-    display: flex;
-    background-color: #D9D9D9;
-    gap: 15px;
-    width: 480px;
-    padding: 5px 20px;
-    border-radius: 15px;
-}
-
-.date-item{
-    background-color: #E8EAED;
-    border-radius: 15px;
-    padding: 0 10px;
-    font-weight: 600;
-}
-
-.time-block{
-    width: 400px;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
-    border-bottom: 1px solid #000;
-}
-
-.title-time-h{
-    font-size: 25px;
-}
-
-
-.news{
-    margin-top: 70px;
-    font-size: 25px;
-}
-
-.news-item{
-    margin-bottom: 30px;
-    font-weight: 500;
-}
-
-.about-img {
-    width: 40px;
-    padding-left: 5px;
+  font-variation-settings: "wdth" 100;
+}
+
+/* Базовые сбросы */
+li { list-style: none; }
+ul { padding: 0; }
+a { text-decoration: none; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+/* Контейнеры и layout */
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 1500px;
+}
+
+/* Header */
+.header { background-color: #B7C0F9; }
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title { font-size: 35px; }
+
+/* Навигация */
+.nav-list {
+  display: flex;
+  gap: 45px;
+  font-size: 25px;
+}
+.nav-item { 
+  list-style: none;
+  transition: transform 0.3s ease;
+}
+.nav-item:hover { transform: translateY(-2px); }
+.nav-link {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Основной контент */
+.img { display: flex; padding-top: 60px; }
+.zal {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 370px);
+  grid-template-rows: repeat(auto-fill, 370px);
+}
+.about-list {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 240px;
+  text-align: center;
+  align-items: center;
+}
+.s { width: 400px; }
+.about-item { margin-bottom: 80px; }
+.about-text { font-size: 20px; }
+.title-about-us { font-size: 25px; }
+.text-about-us { font-size: 25px; }
+
+/* Тарифы */
+.title-trafic {
+  font-size: 45px;
+  text-align: center;
+  margin: 50px 0;
+}
+.trafic-list { display: flex; justify-content: space-evenly; }
+.trafic-light, .trafic-infinitty, .trafic-smart {
+  background-color: #F3F4F7;
+  width: 400px;
+  border-radius: 30px;
+  padding-bottom: 15px;
+}
+.trafic-light { 
+  height: 700px; 
+  color: #0CA1B1; 
+}
+.trafic-infinitty { 
+  height: 730px; 
+  color: #202439; 
+}
+.trafic-smart { 
+  height: 700px; 
+  color: #ED692A; 
+}
+.title-item { margin: 30px; }
+
+/* Кнопки тарифов */
+.trafic-btn-smart, .trafic-btn-light, .trafic-btn-inf {
+  padding: 15px 80px;
+  border-radius: 50px;
+  color: #F3F4F7;
+  border: none;
+  transition: all 0.3s ease;
+}
+.trafic-btn-smart { 
+  background-color: #ED692A; 
+  position: relative;
+  left: 100px;
+}
+.trafic-btn-light { 
+  background-color: #0CA1B1; 
+  position: relative;
+  left: 100px;
+}
+.trafic-btn-inf { 
+  background-color: #202439; 
+  margin-left: 100px;
+}
+.trafic-btn-light:hover { transform: scale(1.05); background: #70b5bd; }
+.trafic-btn-inf:hover { transform: scale(1.05); background: #3d4466; }
+.trafic-btn-smart:hover { transform: scale(1.05); background: #ff854d; }
+
+/* Информация */
+.trafic-main { margin-bottom: 40px; }
+.information-item {
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+}
+.information-text {
+  margin-left: 5px;
+  color: #000;
+}
+.information-img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+.information { margin-bottom: 20px; }
+.price-info { text-align: center; }
+.inff { margin-top: 50px; }
+
+/* Квадраты с иконками */
+.trafic-head { display: flex; }
+.kvadrat-1, .kvadrat-2, .kvadrat-3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  margin-left: 130px;
+  position: relative;
+  bottom: 30px;
+}
+.kvadrat-1 { background-color: #D6F1F0; }
+.kvadrat-2 { background-color: #DDE1EF; }
+.kvadrat-3 { background-color: #FFEBD6; }
+.atom { height: 100px; width: 100px; }
+
+/* Бесплатная тренировка */
+.free {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+.free-btn {
+  font-size: 25px;
+  margin-left: 640px;
+  background-color: #B7C0F9;
+  border: none;
+  padding: 15px 60px;
+  border-radius: 40px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.free-btn:hover {
+  transform: scale(1.05);
+  background: rgb(199, 205, 238);
+}
+
+/* Footer */
+footer { margin-top: 70px; }
+.footer {
+  background-color: #B7C0F9;
+  height: 150px;
+}
+
+/* Персонал */
+.title-personal {
+  text-align: center;
+  margin: 40px 0 50px 0;
+  font-size: 45px;
+}
+.personal { margin-bottom: 70px; }
+.pres-list {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 400px;
+  justify-items: center;
+  align-items: start;
+}
+.person-item {
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+}
+.preson-img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+}
+
+/* Контакты */
+.contacts { font-size: 25px; font-weight: 600; }
+.phon { color: #000; border-bottom: 2px solid #000; }
+.text-contctss { margin-bottom: 30px; }
+.button-contact {
+  color: #fff;
+  background-color: #ED692A;
+  border-radius: 30px;
+  padding: 10px 30px;
+}
+
+/* Расписание */
+.date { width: 70%; }
+.scheduleee { display: flex; }
+.title-date { text-align: start; margin-left: 180px; }
+.title-schedule { margin-top: 50px; text-align: center; }
+.date-list {
+  display: flex;
+  background-color: #D9D9D9;
+  gap: 15px;
+  width: 480px;
+  padding: 5px 20px;
+  border-radius: 15px;
+}
+.date-item {
+  background-color: #E8EAED;
+  border-radius: 15px;
+  padding: 0 10px;
+  font-weight: 600;
+}
+.time-block {
+  width: 400px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  border-bottom: 1px solid #000;
+}
+.title-time-h { font-size: 25px; }
+
+/* Новости */
+.news { margin-top: 70px; font-size: 25px; }
+.news-item { margin-bottom: 30px; font-weight: 500; }
+.about-img { width: 40px; padding-left: 5px; }
+
+/* СТИЛИ ДЛЯ ТРЕНЕРОВ И ПОИСКА */
+
+/* Общие стили для страниц */
+.staff-page,
+.search-results-page,
+.search-page {
+  padding: 40px 0;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.page-title,
+.search-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #202439;
+}
+
+.search-title { font-size: 45px; margin: 30px 0 50px 0; }
+
+/* Сетка тренеров */
+.trainers-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto 70px;
+  justify-items: center;
+}
+
+/* Карточка тренера */
+.trainer-card {
+  background: #F3F4F7;
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 350px;
+}
+
+.trainer-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Фото тренера */
+.trainer-photo {
+  margin-bottom: 20px;
+}
+
+.trainer-photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #B7C0F9;
+}
+
+.trainer-photo-placeholder {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #0CA1B1;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0 auto;
+  border: 4px solid #B7C0F9;
+}
+
+/* Информация о тренере */
+.trainer-info { margin-bottom: 20px; }
+.trainer-name {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #202439;
+}
+.trainer-fathername {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.trainer-position {
+  font-size: 16px;
+  color: #0CA1B1;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.trainer-phone {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+.trainer-salary {
+  font-size: 14px;
+  color: #ED692A;
+  font-weight: 600;
+}
+
+/* Кнопки */
+.trainer-button,
+.details-button {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #0CA1B1;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.details-button { 
+  background-color: #ED692A; 
+  padding: 12px 30px;
+}
+
+.trainer-button:hover,
+.details-button:hover {
+  transform: scale(1.05);
+}
+
+.trainer-button:hover { background: #70b5bd; }
+.details-button:hover { background: #ff854d; }
+
+/* Форма поиска */
+.search-form {
+  background-color: #F3F4F7;
+  padding: 40px;
+  border-radius: 30px;
+  margin-bottom: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #202439;
+}
+
+.search-input,
+.position-select {
+  padding: 15px 25px;
+  border: 2px solid #B7C0F9;
+  border-radius: 50px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.search-input {
+  width: 400px;
+}
+
+.search-input:focus,
+.position-select:focus {
+  outline: none;
+  border-color: #0CA1B1;
+  box-shadow: 0 0 10px rgba(12, 161, 177, 0.2);
+}
+
+.position-select {
+  width: 300px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.search-button,
+.reset-button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  color: #F3F4F7;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.search-button {
+  background-color: #0CA1B1;
+  padding: 15px 40px;
+}
+
+.reset-button {
+  background-color: #ED692A;
+}
+
+.search-button:hover {
+  transform: scale(1.05);
+  background: #70b5bd;
+}
+
+.reset-button:hover {
+  transform: scale(1.05);
+  background: #ff854d;
+}
+
+/* Информация о результатах */
+.results-info,
+.search-info {
+  text-align: center;
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.search-info { font-size: 18px; }
+
+/* Нет результатов */
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.no-results h2 {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.no-results p {
+  color: #888;
+  margin-bottom: 25px;
 }

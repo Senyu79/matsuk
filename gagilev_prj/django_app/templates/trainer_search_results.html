@@ -1,0 +1,55 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block main %}
+<div class="search-results-page">
+    <div class="container">
+        {% if query %}
+            <h1 class="page-title">Результаты поиска: "{{ query }}"</h1>
+        {% else %}
+            <h1 class="page-title">Все тренеры</h1>
+        {% endif %}
+        
+        <div class="search-info">
+            Найдено тренеров: {{ results_count }}
+        </div>
+
+        {% if trainers %}
+            <div class="trainers-grid">
+                {% for trainer in trainers %}
+                <div class="trainer-card">
+                    <div class="trainer-photo">
+                        {% if trainer.cover_url %}
+                        <img src="{{ trainer.cover_url }}" alt="{{ trainer.first_name }} {{ trainer.last_name }}">
+                        {% else %}
+                        <div class="trainer-photo-placeholder">
+                            {{ trainer.first_name|first }}{{ trainer.last_name|first }}
+                        </div>
+                        {% endif %}
+                    </div>
+                    
+                    <div class="trainer-info">
+                        <h3 class="trainer-name">{{ trainer.first_name }} {{ trainer.last_name }}</h3>
+                        {% if trainer.father_name %}
+                        <p class="trainer-fathername">{{ trainer.father_name }}</p>
+                        {% endif %}
+                        <p class="trainer-position">{{ trainer.position_id.title }}</p>
+                        <p class="trainer-phone">Номер
+                            {{ trainer.phone_number }}</p>
+                        <p class="trainer-salary">{{ trainer.position_id.salary }} руб.</p>
+                    </div>
+                    
+                    <a href="{% url 'trainer_detail' trainer.id %}" class="trainer-button">Подробнее</a>
+                </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="no-results">
+                <h2>Тренеры не найдены</h2>
+                <p>Попробуйте изменить запрос поиска</p>
+                <a href="{% url 'staff' %}" class="trainer-button">Посмотреть всех тренеров</a>
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

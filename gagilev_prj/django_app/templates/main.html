@@ -18,12 +18,20 @@
     <header class="header">
         <div class="container">
             <div class="header-inner">
-                <h1 class="title"><a href={% url '' %}>KURTOFF</a></h1>
+                <h1 class="title"><a href="{% url '' %}">KURTOFF</a></h1>
+                
+                <div class="search-header">
+                    <form method="get" action="{% url 'trainer_search' %}">
+                        <input type="text" name="q" placeholder="Найти тренера..." class="search-input-header">
+                        <button type="submit" class="search-button-header">Поиск</button>
+                    </form>
+                </div>
+
                 <nav class="nav-header">
                     <ul class="nav-list">
-                        <li class="nav-item"><a href={% url 'subscription' %} class="nav-link">Тарифы</a></li>
-                        <li class="nav-item"><a href={% url 'timetable' %} class="nav-link">Расписание</a></li>
-                        <li class="nav-item"><a href={% url 'staff' %} class="nav-link">Персонал</a></li>
+                        <li class="nav-item"><a href="{% url 'subscription' %}" class="nav-link">Тарифы</a></li>
+                        <li class="nav-item"><a href="{% url 'timetable' %}" class="nav-link">Расписание</a></li>
+                        <li class="nav-item"><a href="{% url 'staff' %}" class="nav-link">Тренеры</a></li>
                     </ul>
                 </nav>
             </div>
