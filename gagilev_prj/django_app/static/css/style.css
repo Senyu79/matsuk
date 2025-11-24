@@ -6,20 +6,17 @@
   font-variation-settings: "wdth" 100;
 }
 
-/* Базовые сбросы */
 li { list-style: none; }
 ul { padding: 0; }
 a { text-decoration: none; }
 body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
-/* Контейнеры и layout */
 .container {
   margin: 0 auto;
   padding: 0 10px;
   width: 1500px;
 }
 
-/* Header */
 .header { background-color: #B7C0F9; }
 .header-inner {
   display: flex;
@@ -28,7 +25,6 @@ body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 }
 .title { font-size: 35px; }
 
-/* Навигация */
 .nav-list {
   display: flex;
   gap: 45px;
@@ -44,7 +40,6 @@ body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
   color: #000;
 }
 
-/* Основной контент */
 .img { display: flex; padding-top: 60px; }
 .zal {
   width: 50%;
@@ -62,11 +57,16 @@ body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 }
 .s { width: 400px; }
 .about-item { margin-bottom: 80px; }
-.about-text { font-size: 20px; }
+.about-text { 
+  font-size: 20px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px; 
+}
 .title-about-us { font-size: 25px; }
 .text-about-us { font-size: 25px; }
 
-/* Тарифы */
 .title-trafic {
   font-size: 45px;
   text-align: center;
@@ -93,7 +93,6 @@ body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 }
 .title-item { margin: 30px; }
 
-/* Кнопки тарифов */
 .trafic-btn-smart, .trafic-btn-light, .trafic-btn-inf {
   padding: 15px 80px;
   border-radius: 50px;
@@ -119,7 +118,6 @@ body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 .trafic-btn-inf:hover { transform: scale(1.05); background: #3d4466; }
 .trafic-btn-smart:hover { transform: scale(1.05); background: #ff854d; }
 
-/* Информация */
 .trafic-main { margin-bottom: 40px; }
 .information-item {
   display: flex;
@@ -139,7 +137,6 @@ body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 .price-info { text-align: center; }
 .inff { margin-top: 50px; }
 
-/* Квадраты с иконками */
 .trafic-head { display: flex; }
 .kvadrat-1, .kvadrat-2, .kvadrat-3 {
   width: 100px;
@@ -154,7 +151,6 @@ body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 .kvadrat-3 { background-color: #FFEBD6; }
 .atom { height: 100px; width: 100px; }
 
-/* Бесплатная тренировка */
 .free {
   margin-top: 50px;
   text-align: center;
@@ -176,14 +172,12 @@ body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
   background: rgb(199, 205, 238);
 }
 
-/* Footer */
 footer { margin-top: 70px; }
 .footer {
   background-color: #B7C0F9;
   height: 150px;
 }
 
-/* Персонал */
 .title-personal {
   text-align: center;
   margin: 40px 0 50px 0;
@@ -209,7 +203,6 @@ footer { margin-top: 70px; }
   object-fit: cover;
 }
 
-/* Контакты */
 .contacts { font-size: 25px; font-weight: 600; }
 .phon { color: #000; border-bottom: 2px solid #000; }
 .text-contctss { margin-bottom: 30px; }
@@ -220,7 +213,6 @@ footer { margin-top: 70px; }
   padding: 10px 30px;
 }
 
-/* Расписание */
 .date { width: 70%; }
 .scheduleee { display: flex; }
 .title-date { text-align: start; margin-left: 180px; }
@@ -249,33 +241,61 @@ footer { margin-top: 70px; }
 }
 .title-time-h { font-size: 25px; }
 
-/* Новости */
 .news { margin-top: 70px; font-size: 25px; }
 .news-item { margin-bottom: 30px; font-weight: 500; }
 .about-img { width: 40px; padding-left: 5px; }
 
-/* СТИЛИ ДЛЯ ТРЕНЕРОВ И ПОИСКА */
-
-/* Общие стили для страниц */
-.staff-page,
-.search-results-page,
-.search-page {
-  padding: 40px 0;
-  background-color: #fff;
-  min-height: 100vh;
+.search-header {
+  display: flex;
+  align-items: center;
 }
 
-.page-title,
-.search-title {
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 40px;
-  color: #202439;
+.search-input-header {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+  width: 250px;
 }
 
-.search-title { font-size: 45px; margin: 30px 0 50px 0; }
+.search-button-header {
+  padding: 8px 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 14px;
+}
 
-/* Сетка тренеров */
+.search-button-header:hover {
+  background: #0056b3;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.search-form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.clear-search {
+  color: #666;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.clear-search:hover {
+  color: #333;
+}
+
 .trainers-grid {
   display: grid;
   gap: 30px;
@@ -285,7 +305,6 @@ footer { margin-top: 70px; }
   justify-items: center;
 }
 
-/* Карточка тренера */
 .trainer-card {
   background: #F3F4F7;
   border-radius: 20px;
@@ -302,7 +321,6 @@ footer { margin-top: 70px; }
   box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
-/* Фото тренера */
 .trainer-photo {
   margin-bottom: 20px;
 }
@@ -330,7 +348,6 @@ footer { margin-top: 70px; }
   border: 4px solid #B7C0F9;
 }
 
-/* Информация о тренере */
 .trainer-info { margin-bottom: 20px; }
 .trainer-name {
   font-size: 22px;
@@ -354,15 +371,8 @@ footer { margin-top: 70px; }
   color: #666;
   margin-bottom: 5px;
 }
-.trainer-salary {
-  font-size: 14px;
-  color: #ED692A;
-  font-weight: 600;
-}
 
-/* Кнопки */
-.trainer-button,
-.details-button {
+.trainer-button {
   display: inline-block;
   padding: 12px 25px;
   background: #0CA1B1;
@@ -376,108 +386,11 @@ footer { margin-top: 70px; }
   font-size: 16px;
 }
 
-.details-button { 
-  background-color: #ED692A; 
-  padding: 12px 30px;
-}
-
-.trainer-button:hover,
-.details-button:hover {
-  transform: scale(1.05);
-}
-
-.trainer-button:hover { background: #70b5bd; }
-.details-button:hover { background: #ff854d; }
-
-/* Форма поиска */
-.search-form {
-  background-color: #F3F4F7;
-  padding: 40px;
-  border-radius: 30px;
-  margin-bottom: 50px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.form-row {
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-group label {
-  margin-bottom: 10px;
-  font-size: 20px;
-  font-weight: 600;
-  color: #202439;
-}
-
-.search-input,
-.position-select {
-  padding: 15px 25px;
-  border: 2px solid #B7C0F9;
-  border-radius: 50px;
-  font-size: 18px;
-  transition: all 0.3s ease;
-}
-
-.search-input {
-  width: 400px;
-}
-
-.search-input:focus,
-.position-select:focus {
-  outline: none;
-  border-color: #0CA1B1;
-  box-shadow: 0 0 10px rgba(12, 161, 177, 0.2);
-}
-
-.position-select {
-  width: 300px;
-  background-color: white;
-  cursor: pointer;
-}
-
-.search-button,
-.reset-button {
-  padding: 15px 30px;
-  border: none;
-  border-radius: 50px;
-  color: #F3F4F7;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.search-button {
-  background-color: #0CA1B1;
-  padding: 15px 40px;
-}
-
-.reset-button {
-  background-color: #ED692A;
-}
-
-.search-button:hover {
+.trainer-button:hover {
   transform: scale(1.05);
   background: #70b5bd;
 }
 
-.reset-button:hover {
-  transform: scale(1.05);
-  background: #ff854d;
-}
-
-/* Информация о результатах */
 .results-info,
 .search-info {
   text-align: center;
@@ -488,7 +401,6 @@ footer { margin-top: 70px; }
 
 .search-info { font-size: 18px; }
 
-/* Нет результатов */
 .no-results {
   text-align: center;
   padding: 60px 20px;
@@ -502,4 +414,106 @@ footer { margin-top: 70px; }
 .no-results p {
   color: #888;
   margin-bottom: 25px;
+}
+
+.trainer-detail {
+    padding: 40px 0;
+}
+
+.trainer-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+    padding: 30px;
+    background: #F3F4F7;
+    border-radius: 20px;
+}
+
+.trainer-photo-large {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #B7C0F9;
+}
+
+.trainer-info-large {
+    flex: 1;
+}
+
+.trainer-name-large {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #202439;
+}
+
+.trainer-position-large {
+    font-size: 20px;
+    color: #0CA1B1;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.trainer-fathername {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.trainer-phone {
+    font-size: 16px;
+    color: #333;
+}
+
+.trainer-trainings {
+    margin-bottom: 40px;
+}
+
+.trainer-trainings h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #202439;
+}
+
+.training-list {
+    display: grid;
+    gap: 20px;
+}
+
+.training-item {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #E8EAED;
+}
+
+.training-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #202439;
+}
+
+.training-item p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #0CA1B1;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    transform: scale(1.05);
+    background: #70b5bd;
 }

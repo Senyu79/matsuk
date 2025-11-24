@@ -11,7 +11,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href=" {% static '../static/css/normalize.css' %} ">
     <link rel="stylesheet" href=" {% static '../static/css/style.css' %} ">
-    <title>иба чотка</title>
+    <title>KURTOFF</title>
 </head>
 
 <body>
@@ -21,8 +21,8 @@
                 <h1 class="title"><a href="{% url '' %}">KURTOFF</a></h1>
                 
                 <div class="search-header">
-                    <form method="get" action="{% url 'trainer_search' %}">
-                        <input type="text" name="q" placeholder="Найти тренера..." class="search-input-header">
+                    <form method="get" action="{% url 'search_trainers' %}">
+                        <input type="text" name="search" placeholder="Найти тренера по имени..." class="search-input-header">
                         <button type="submit" class="search-button-header">Поиск</button>
                     </form>
                 </div>
