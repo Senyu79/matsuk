@@ -1,0 +1,44 @@
+{% extends "main.html" %}
+{% load static %}
+
+{% block main %}
+<div class="container">
+    <section class="trainer-detail">
+        <div class="trainer-header">
+            {% if trainer.cover_url %}
+            <img src="{{ trainer.cover_url }}" alt="{{ trainer.first_name }}" class="trainer-photo-large">
+            {% else %}
+            <img src="{% static 'images/default-avatar.jpg' %}" alt="Нет фото" class="trainer-photo-large">
+            {% endif %}
+            
+            <div class="trainer-info-large">
+                <h1 class="trainer-name-large">{{ trainer.first_name }} {{ trainer.last_name }}</h1>
+                {% if trainer.father_name %}
+                <p class="trainer-fathername">{{ trainer.father_name }}</p>
+                {% endif %}
+                {% if trainer.position_id %}
+                <p class="trainer-position-large">{{ trainer.position_id.title }}</p>
+                {% endif %}
+                {% if trainer.phone_number %}
+                <p class="trainer-phone">Телефон: {{ trainer.phone_number }}</p>
+                {% endif %}
+            </div>
+        </div>
+        
+        {% if trainings %}
+        <div class="trainer-trainings">
+            <h2>Тренировки</h2>
+            <ul class="training-list">
+                {% for training in trainings %}
+                <li class="training-item">
+                    <h3>{{ training.name }}</h3>
+                    <p>Время: {{ training.time }}</p>
+                    <p>Место: {{ training.location }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </section>
+</div>
+{% endblock %}

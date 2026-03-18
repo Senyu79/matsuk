@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<<<<<<< HEAD
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+=======
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href=" {% static '../static/css/normalize.css' %} ">
+    <link rel="stylesheet" href=" {% static '../static/css/style.css' %} ">
+>>>>>>> c53f6e6620435d764aff135a8df23d3d3dd2a3bc
     <title>KURTOFF</title>
 </head>
 <body>
@@ -18,8 +25,13 @@
                 <h1 class="title"><a href="{% url '' %}">KURTOFF</a></h1>
                 
                 <div class="search-header">
+<<<<<<< HEAD
                     <form onsubmit="searchTrainers(event); return false;">
                         <input type="text" id="trainer-search-input" placeholder="Найти тренера..." class="search-input-header">
+=======
+                    <form method="get" action="{% url 'search_trainers' %}">
+                        <input type="text" name="search" placeholder="Найти тренера по имени..." class="search-input-header">
+>>>>>>> c53f6e6620435d764aff135a8df23d3d3dd2a3bc
                         <button type="submit" class="search-button-header">Поиск</button>
                     </form>
                 </div>
@@ -46,7 +58,11 @@
         </div>
     </footer>
 
+<<<<<<< HEAD
 
     <script src="{% static 'js/search.js' %}"></script>
 </body>
 </html>
+=======
+</html>
+>>>>>>> c53f6e6620435d764aff135a8df23d3d3dd2a3bc

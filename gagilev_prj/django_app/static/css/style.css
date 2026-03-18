@@ -57,7 +57,13 @@ body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 }
 .s { width: 400px; }
 .about-item { margin-bottom: 80px; }
-.about-text { font-size: 20px; }
+.about-text { 
+  font-size: 20px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px; 
+}
 .title-about-us { font-size: 25px; }
 .text-about-us { font-size: 25px; }
 
@@ -239,6 +245,59 @@ footer { margin-top: 70px; }
 .news-item { margin-bottom: 30px; font-weight: 500; }
 .about-img { width: 40px; padding-left: 5px; }
 
+<<<<<<< HEAD
+=======
+.search-header {
+  display: flex;
+  align-items: center;
+}
+
+.search-input-header {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+  width: 250px;
+}
+
+.search-button-header {
+  padding: 8px 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.search-button-header:hover {
+  background: #0056b3;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.search-form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.clear-search {
+  color: #666;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.clear-search:hover {
+  color: #333;
+}
+>>>>>>> c53f6e6620435d764aff135a8df23d3d3dd2a3bc
 
 .trainers-grid {
   display: grid;
@@ -315,14 +374,13 @@ footer { margin-top: 70px; }
   color: #666;
   margin-bottom: 5px;
 }
-.trainer-salary {
-  font-size: 14px;
-  color: #ED692A;
-  font-weight: 600;
-}
 
+<<<<<<< HEAD
 .trainer-button,
 .details-button {
+=======
+.trainer-button {
+>>>>>>> c53f6e6620435d764aff135a8df23d3d3dd2a3bc
   display: inline-block;
   padding: 12px 25px;
   background: #0CA1B1;
@@ -336,6 +394,7 @@ footer { margin-top: 70px; }
   font-size: 16px;
 }
 
+<<<<<<< HEAD
 .details-button { 
   background-color: #ED692A; 
   padding: 12px 30px;
@@ -427,15 +486,21 @@ footer { margin-top: 70px; }
 }
 
 .search-button:hover {
+=======
+.trainer-button:hover {
+>>>>>>> c53f6e6620435d764aff135a8df23d3d3dd2a3bc
   transform: scale(1.05);
   background: #70b5bd;
 }
 
+<<<<<<< HEAD
 .reset-button:hover {
   transform: scale(1.05);
   background: #ff854d;
 }
 
+=======
+>>>>>>> c53f6e6620435d764aff135a8df23d3d3dd2a3bc
 .results-info,
 .search-info {
   text-align: center;
@@ -459,4 +524,106 @@ footer { margin-top: 70px; }
 .no-results p {
   color: #888;
   margin-bottom: 25px;
+}
+
+.trainer-detail {
+    padding: 40px 0;
+}
+
+.trainer-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+    padding: 30px;
+    background: #F3F4F7;
+    border-radius: 20px;
+}
+
+.trainer-photo-large {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #B7C0F9;
+}
+
+.trainer-info-large {
+    flex: 1;
+}
+
+.trainer-name-large {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #202439;
+}
+
+.trainer-position-large {
+    font-size: 20px;
+    color: #0CA1B1;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.trainer-fathername {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.trainer-phone {
+    font-size: 16px;
+    color: #333;
+}
+
+.trainer-trainings {
+    margin-bottom: 40px;
+}
+
+.trainer-trainings h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #202439;
+}
+
+.training-list {
+    display: grid;
+    gap: 20px;
+}
+
+.training-item {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #E8EAED;
+}
+
+.training-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #202439;
+}
+
+.training-item p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #0CA1B1;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    transform: scale(1.05);
+    background: #70b5bd;
 }
