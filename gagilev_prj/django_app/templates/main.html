@@ -1,19 +1,16 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href=" {% static '../static/css/normalize.css' %} ">
-    <link rel="stylesheet" href=" {% static '../static/css/style.css' %} ">
-    <title>иба чотка</title>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>KURTOFF</title>
 </head>
-
 <body>
     <header class="header">
         <div class="container">
@@ -21,8 +18,8 @@
                 <h1 class="title"><a href="{% url '' %}">KURTOFF</a></h1>
                 
                 <div class="search-header">
-                    <form method="get" action="{% url 'trainer_search' %}">
-                        <input type="text" name="q" placeholder="Найти тренера..." class="search-input-header">
+                    <form onsubmit="searchTrainers(event); return false;">
+                        <input type="text" id="trainer-search-input" placeholder="Найти тренера..." class="search-input-header">
                         <button type="submit" class="search-button-header">Поиск</button>
                     </form>
                 </div>
@@ -37,17 +34,19 @@
             </div>
         </div>
     </header>
+    
     <main class="main">
         {% block main %}
         {% endblock %}
     </main>
+    
     <footer class="footer">
         <div class="container">
-            <div class="footer-inner">
-                
-            </div>
+            <div class="footer-inner"></div>
         </div>
     </footer>
-</body>
 
+
+    <script src="{% static 'js/search.js' %}"></script>
+</body>
 </html>

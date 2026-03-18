@@ -1,5 +1,4 @@
 from django.urls import path
-from django.contrib.sitemaps.views import sitemap
 from .views import page1, page2, page3, page4, trainer_search, trainer_detail
 
 urlpatterns = [
