@@ -3,109 +3,47 @@
 
 {% block main %}
 <div class="container">
-    {% if is_detail %}
-        <div class="trainer-detail">
-            <div class="trainer-detail-header" style="text-align: center; padding: 40px 0;">
-                {% if trainer.cover_url %}
-                <img src="{{ trainer.cover_url }}" alt="{{ trainer.first_name }}" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 4px solid #B7C0F9;">
-                {% else %}
-                <div class="trainer-photo-placeholder" style="width: 200px; height: 200px; margin: 0 auto; font-size: 48px;">
-                    {{ trainer.first_name|first }}{{ trainer.last_name|first }}
-                </div>
-                {% endif %}
-                
-                <h1 style="font-size: 36px; margin: 20px 0 10px;">{{ trainer.first_name }} {{ trainer.last_name }}</h1>
-                {% if trainer.father_name %}
-                <p style="font-size: 18px; color: #666; margin-bottom: 10px;">{{ trainer.father_name }}</p>
-                {% endif %}
-                <p style="font-size: 20px; color: #0CA1B1; font-weight: 600;">{{ trainer.position_id.title }}</p>
-                <p style="font-size: 18px;">Телефон: +7 {{ trainer.phone_number }}</p>
-                <p style="font-size: 18px; color: #ED692A;">Зарплата: {{ trainer.position_id.salary }} руб.</p>
-            </div>
-
-            <div style="margin: 40px 0;">
-                <h2 style="font-size: 28px; margin-bottom: 20px;">Тренировки</h2>
-                {% if trainings %}
-                <ul style="list-style: none; padding: 0;">
-                    {% for training in trainings %}
-                    <li style="padding: 15px; background: #f5f5f5; margin-bottom: 5px; border-radius: 5px;">
-                        {{ training.start_time|date:"d.m.Y H:i" }} - {{ training.end_time|date:"H:i" }}
-                    </li>
-                    {% endfor %}
-                </ul>
-                {% else %}
-                <p style="color: #666;">Нет запланированных тренировок</p>
-                {% endif %}
-            </div>
-
-            <div style="margin: 40px 0;">
-                <h2 style="font-size: 28px; margin-bottom: 20px;">Клиенты</h2>
-                {% if clients %}
-                <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px;">
-                    {% for client in clients %}
-                    <li style="padding: 15px; background: #f5f5f5; border-radius: 5px;">
-                        <strong>{{ client.first_name }} {{ client.last_name }}</strong><br>
-                        <span style="color: #666;">{{ client.father_name }}</span><br>
-                        <span style="color: #666;">+7 {{ client.phone_number }}</span>
-                    </li>
-                    {% endfor %}
-                </ul>
-                {% else %}
-                <p style="color: #666;">Нет клиентов</p>
-                {% endif %}
-            </div>
-
-            <div style="text-align: center; margin: 40px 0;">
-                <a href="{% url 'staff' %}" class="trainer-button" style="display: inline-block; padding: 15px 40px;">Назад к списку</a>
-            </div>
-        </div>
-
+    {% if query %}
+        <h1 class="page-title">Результаты поиска: "{{ query }}"</h1>
     {% else %}
-        {% if query %}
-            <h1 class="page-title">Результаты поиска: "{{ query }}"</h1>
-        {% else %}
-            <h1 class="page-title">Все тренеры</h1>
-        {% endif %}
-        
-        <div class="search-info">
-            Найдено тренеров: {{ results_count }}
-        </div>
+        <h1 class="page-title">Все тренеры</h1>
+    {% endif %}
+    
+    <div class="search-info">
+        Найдено тренеров: {{ results_count }}
+    </div>
 
-        {% if trainers %}
-            <div class="trainers-grid">
-                {% for trainer in trainers %}
-                <div class="trainer-card">
-                    <div class="trainer-photo">
-                        {% if trainer.cover_url %}
-                        <img src="{{ trainer.cover_url }}" alt="{{ trainer.first_name }} {{ trainer.last_name }}">
-                        {% else %}
-                        <div class="trainer-photo-placeholder">
-                            {{ trainer.first_name|first }}{{ trainer.last_name|first }}
-                        </div>
-                        {% endif %}
+    {% if trainers %}
+        <div class="trainers-grid">
+            {% for trainer in trainers %}
+            <div class="trainer-card">
+                <div class="trainer-photo">
+                    {% if trainer.cover_url %}
+                    <img src="{{ trainer.cover_url }}" alt="{{ trainer.first_name }} {{ trainer.last_name }}">
+                    {% else %}
+                    <div class="trainer-photo-placeholder">
+                        {{ trainer.first_name|first }}{{ trainer.last_name|first }}
                     </div>
-                    
-                    <div class="trainer-info">
-                        <h3 class="trainer-name">{{ trainer.first_name }} {{ trainer.last_name }}</h3>
-                        {% if trainer.father_name %}
-                        <p class="trainer-fathername">{{ trainer.father_name }}</p>
-                        {% endif %}
-                        <p class="trainer-position">{{ trainer.position_id.title }}</p>
-                        <p class="trainer-phone">Номер +7 {{ trainer.phone_number }}</p>
-                        <p class="trainer-salary">{{ trainer.position_id.salary }} руб.</p>
-                    </div>
-                    
-                    <a href="{% url 'trainer_detail' trainer.id %}" class="trainer-button">Подробнее</a>
+                    {% endif %}
                 </div>
-                {% endfor %}
+                
+                <div class="trainer-info">
+                    <h3 class="trainer-name">{{ trainer.first_name }} {{ trainer.last_name }}</h3>
+                    {% if trainer.father_name %}
+                    <p class="trainer-fathername">{{ trainer.father_name }}</p>
+                    {% endif %}
+                    <p class="trainer-position">{{ trainer.position_id.title }}</p>
+                    <p class="trainer-phone">Номер +7 {{ trainer.phone_number }}</p>
+                </div>
             </div>
-        {% else %}
-            <div class="no-results">
-                <h2>Тренеры не найдены</h2>
-                <p>Попробуйте изменить запрос поиска</p>
-                <a href="{% url 'staff' %}" class="trainer-button">Посмотреть всех тренеров</a>
-            </div>
-        {% endif %}
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="no-results">
+            <h2>Тренеры не найдены</h2>
+            <p>Попробуйте изменить запрос поиска</p>
+            <a href="{% url 'staff' %}" class="trainer-button">Посмотреть всех тренеров</a>
+        </div>
     {% endif %}
 </div>
 {% endblock %}
